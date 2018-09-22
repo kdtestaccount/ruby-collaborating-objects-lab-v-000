@@ -38,7 +38,6 @@ def self.find_or_create_by_name(name)
     end 
 end
   @artist_to_return
-
 end
   
 def print_songs  
