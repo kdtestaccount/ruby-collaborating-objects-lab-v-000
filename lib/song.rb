@@ -31,9 +31,9 @@ end
 def artist(artist_name=nil)
   @artist_inst = Artist.find_or_create_by_name(artist_name)
   @artist_inst.add_song(artist_name)
-  
-  Artist.all << @artist_inst
-  
+  if !Artist.all include? artist_inst
+    Artist.all << @artist_inst
+  end
   @artist_inst
 end
 
