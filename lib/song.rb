@@ -2,7 +2,7 @@ class Song
   
 attr_accessor :name, :song, :artist, :newsong, :artists, :artist_inst
 
-# @@all = []
+@@all = []
 
 def initialize(song, artistname=nil)
   @name = song
@@ -23,6 +23,7 @@ def self.new_by_filename(file_name)
   
   newsong = Song.new(@name, @artist)
   newsong.artist.name = @artist
+  newsong 
   artistreturned = newsong.artist(newsong)
   newsong
 end 
