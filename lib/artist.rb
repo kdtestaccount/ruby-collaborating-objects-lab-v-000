@@ -36,7 +36,7 @@ def self.find_or_create_by_name(name)
     else 
       @artist_to_return = item
     end 
-end
+  end
   @artist_to_return
 end
   
