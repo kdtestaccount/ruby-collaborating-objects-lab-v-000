@@ -25,7 +25,7 @@ def self.new_by_filename(file_name)
   newsong.artist.name = @artist
   
   artistreturned = newsong.artist(newsong)
-  artistreturned.all << newsong
+  @artist_inst.all << newsong
   newsong
 end 
   
