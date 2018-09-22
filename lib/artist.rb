@@ -36,8 +36,9 @@ def self.find_or_create_by_name(name)
     else 
       @artist_to_return = item
     end 
-  @artist_to_return
 end
+  @artist_to_return
+
 end
   
 def print_songs  
